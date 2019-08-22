@@ -1,0 +1,22 @@
+{
+    "name": "ppuisant",
+    "version": "0.1.0",
+    "description": "Parcel Pug UIkit Sass",
+    "main": "src/index.pug",
+    "scripts": {
+        "dev": "parcel src/index.pug",
+        "build": "parcel build src/index.pug --out-dir public"
+    },
+    "keywords": [],
+    "author": "Randy W. Sims",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "parcel-bundler": "^1.12.3",
+        "pug": "^2.0.4",
+        "sass": "^1.22.10"
+    },
+    "dependencies": {
+        "uikit": "^3.1.7"
+    }
+}
