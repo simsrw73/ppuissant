@@ -1,15 +1,23 @@
 {
     "name": "ppuisant",
     "version": "0.1.0",
+    "author": "Randy W. Sims",
     "description": "Parcel Pug UIkit Sass",
+    "keywords": [],
+    "license": "ISC",
+    "homepage": "https://github.com/simsrw73/ppuisant#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/simsrw73/ppuisant.git"
+    },
+    "bugs": {
+        "url": "https://github.com/simsrw73/ppuisant/issues"
+    },
     "main": "src/index.pug",
     "scripts": {
         "dev": "parcel src/index.pug",
         "build": "parcel build src/index.pug --out-dir public"
     },
-    "keywords": [],
-    "author": "Randy W. Sims",
-    "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^9.6.1",
         "parcel-bundler": "^1.12.3",
