@@ -15,13 +15,15 @@
     },
     "main": "src/index.pug",
     "scripts": {
-        "dev": "parcel src/index.pug",
-        "build": "parcel build src/index.pug --out-dir public"
+        "dev": "parcel src/index.pug --out-dir public",
+        "build": "parcel build src/index.pug --no-source-maps",
+        "clean": "rimraf .cache dist public"
     },
     "devDependencies": {
         "autoprefixer": "^9.6.1",
         "parcel-bundler": "^1.12.3",
         "pug": "^2.0.4",
+        "rimraf": "^3.0.0",
         "sass": "^1.22.10"
     },
     "dependencies": {
