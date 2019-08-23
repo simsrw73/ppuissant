@@ -1,6 +1,6 @@
 # ppuisant - Parcel Pug UIkit Sass
 
-Boilerplate for creating static websites that use Parcel, Pug, UIkit, and Sass
+Boilerplate for creating static websites that use [Parcel](https://parceljs.org/), [Pug](https://pugjs.org), [UIkit](https://getuikit.com/), and [Sass](https://sass-lang.com/)
 
 ## Creating your website
 
@@ -34,4 +34,10 @@ Build the final relase version of the theme:
 
 ```shell
 npm run build
+```
+
+### Remove All Generated Files
+
+```shell
+npm run clean
 ```
