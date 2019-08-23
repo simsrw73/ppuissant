@@ -1,4 +1,4 @@
-# ppuisant - Parcel Pug UIkit Sass
+# ppuissant - Parcel Pug UIkit Sass
 
 Boilerplate for creating static websites that use [Parcel](https://parceljs.org/), [Pug](https://pugjs.org), [UIkit](https://getuikit.com/), and [Sass](https://sass-lang.com/)
 
@@ -12,7 +12,7 @@ Boilerplate for creating static websites that use [Parcel](https://parceljs.org/
 ### Clone the Repository
 
 ```shell
-git clone https://github.com/simsrw73/ppuisant.git my-website
+git clone https://github.com/simsrw73/ppuissant.git my-website
 ```
 
 ### Install Build Dependencies

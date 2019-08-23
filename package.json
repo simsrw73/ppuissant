@@ -1,17 +1,17 @@
 {
-    "name": "ppuisant",
+    "name": "ppuissant",
     "version": "0.1.0",
     "author": "Randy W. Sims",
     "description": "Parcel Pug UIkit Sass",
     "keywords": [],
     "license": "ISC",
-    "homepage": "https://github.com/simsrw73/ppuisant#readme",
+    "homepage": "https://github.com/simsrw73/ppuissant#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/simsrw73/ppuisant.git"
+        "url": "git+https://github.com/simsrw73/ppuissant.git"
     },
     "bugs": {
-        "url": "https://github.com/simsrw73/ppuisant/issues"
+        "url": "https://github.com/simsrw73/ppuissant/issues"
     },
     "main": "src/index.pug",
     "scripts": {
