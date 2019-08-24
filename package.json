@@ -22,6 +22,17 @@
     "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "clean": "rimraf .cache dist public"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
@@ -36,6 +47,8 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
     "flow-bin": "^0.106.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0",
