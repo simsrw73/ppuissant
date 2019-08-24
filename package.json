@@ -13,13 +13,16 @@
   "bugs": {
     "url": "https://github.com/simsrw73/ppuissant/issues"
   },
-  "main": "src/index.pug",
+  "browser": "src/index.pug",
   "scripts": {
     "start": "parcel src/index.pug --out-dir public",
     "build": "parcel build src/index.pug --no-source-maps",
     "flow": "flow",
-    "lint": "eslint src/app/*.js",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:js": "eslint --fix src/app/*.js",
+    "lint:scss": "stylelint --fix \"src/style/**/*.scss\"",
     "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
+    "stylelint-check": "stylelint-config-prettier-check",
     "clean": "rimraf .cache dist public"
   },
   "husky": {
@@ -30,6 +33,10 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint --syntax=scss --fix",
       "git add"
     ]
   },
@@ -49,12 +56,17 @@
     "flow-bin": "^0.106.0",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.3",
+    "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0",
     "pug": "^2.0.4",
     "rimraf": "^3.0.0",
-    "sass": "^1.22.10"
+    "sass": "^1.22.10",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-prettier": "^1.1.1"
   },
   "dependencies": {
     "uikit": "^3.1.7"
