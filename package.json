@@ -1,74 +1,75 @@
 {
-  "name": "ppuissant",
-  "version": "0.1.0",
-  "author": "Randy W. Sims",
-  "description": "Parcel Pug UIkit Sass",
-  "keywords": [],
-  "license": "ISC",
-  "homepage": "https://github.com/simsrw73/ppuissant#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/simsrw73/ppuissant.git"
-  },
-  "bugs": {
-    "url": "https://github.com/simsrw73/ppuissant/issues"
-  },
-  "browser": "src/index.pug",
-  "scripts": {
-    "start": "parcel src/index.pug --out-dir public",
-    "build": "parcel build src/index.pug --no-source-maps",
-    "flow": "flow",
-    "lint": "npm-run-all --parallel lint:*",
-    "lint:js": "eslint --fix src/app/*.js",
-    "lint:scss": "stylelint --fix \"src/style/**/*.scss\"",
-    "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
-    "stylelint-check": "stylelint-config-prettier-check",
-    "clean": "rimraf .cache dist public"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "ppuissant",
+    "version": "0.1.0",
+    "description": "Parcel Pug UIkit Sass",
+    "keywords": [],
+    "homepage": "https://github.com/simsrw73/ppuissant#readme",
+    "bugs": {
+        "url": "https://github.com/simsrw73/ppuissant/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/simsrw73/ppuissant.git"
+    },
+    "license": "ISC",
+    "author": "Randy W. Sims",
+    "browser": "src/index.pug",
+    "scripts": {
+        "build": "parcel build src/index.pug --no-source-maps",
+        "clean": "rimraf .cache dist public",
+        "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
+        "flow": "flow",
+        "lint": "npm-run-all --parallel lint:*",
+        "lint:js": "eslint --fix src/app/*.js",
+        "lint:scss": "stylelint --fix \"src/style/**/*.scss\"",
+        "start": "parcel src/index.pug --out-dir public",
+        "stylelint-check": "stylelint-config-prettier-check"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.scss": [
+            "stylelint --syntax=scss --fix",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "uikit": "^3.1.7"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-flow": "^7.0.0",
+        "@prettier/plugin-pug": "^1.0.0",
+        "autoprefixer": "^9.6.1",
+        "babel-eslint": "^10.0.2",
+        "eslint": "^6.2.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-flowtype": "^4.2.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-prettier": "^3.1.0",
+        "flow-bin": "^0.106.0",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.3",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.3",
+        "prettier": "^1.18.2",
+        "prettier-eslint": "^9.0.0",
+        "pug": "^2.0.4",
+        "rimraf": "^3.0.0",
+        "sass": "^1.22.10",
+        "stylelint": "^10.1.0",
+        "stylelint-config-prettier": "^5.2.0",
+        "stylelint-config-sass-guidelines": "^6.0.0",
+        "stylelint-prettier": "^1.1.1"
     }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.scss": [
-      "stylelint --syntax=scss --fix",
-      "git add"
-    ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-flow": "^7.0.0",
-    "autoprefixer": "^9.6.1",
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.2.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-flowtype": "^4.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "flow-bin": "^0.106.0",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.3",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.3",
-    "prettier": "^1.18.2",
-    "prettier-eslint": "^9.0.0",
-    "pug": "^2.0.4",
-    "rimraf": "^3.0.0",
-    "sass": "^1.22.10",
-    "stylelint": "^10.1.0",
-    "stylelint-config-prettier": "^5.2.0",
-    "stylelint-config-sass-guidelines": "^6.0.0",
-    "stylelint-prettier": "^1.1.1"
-  },
-  "dependencies": {
-    "uikit": "^3.1.7"
-  }
 }
