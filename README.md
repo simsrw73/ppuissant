@@ -1,6 +1,8 @@
 # ppuissant - Parcel Pug UIkit Sass
 
-Boilerplate for creating static websites that use [Parcel](https://parceljs.org/), [Pug](https://pugjs.org), [UIkit](https://getuikit.com/), and [Sass](https://sass-lang.com/)
+Boilerplate for creating static websites that use [Parcel](https://parceljs.org/), [Pug](https://pugjs.org), [UIkit](https://getuikit.com/), and [Sass](https://sass-lang.com/).
+
+Additionally, supports develpment with [Flow](https://flow.org), [ESLint](https://eslint.org), [stylelint](https://stylelint.io), [pug-lint](https://github.com/pugjs/pug-lint), and [Prettier](https://prettier.io).
 
 ## Creating your website
 
