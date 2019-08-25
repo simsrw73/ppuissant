@@ -4,6 +4,5 @@
     "useTabs": false,
     "tabWidth": 4,
     "semi": true,
-    "parser": "flow",
     "trailingComma": "es5"
 }

@@ -65,7 +65,7 @@
     "sass": "^1.22.10",
     "stylelint": "^10.1.0",
     "stylelint-config-prettier": "^5.2.0",
-    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-sass-guidelines": "^6.0.0",
     "stylelint-prettier": "^1.1.1"
   },
   "dependencies": {
