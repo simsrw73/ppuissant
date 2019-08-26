@@ -27,7 +27,7 @@ npm install
 ### Develop the Website
 
 ```shell
-npm run dev
+npm run start
 ```
 
 ### Build the Final Distribution

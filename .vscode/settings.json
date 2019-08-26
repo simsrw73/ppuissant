@@ -4,9 +4,7 @@
     "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
     "javascript.format.enable": false,
     "javascript.validate.enable": false,
-    "prettier.stylelintIntegration": true,
-    "prettier.eslintIntegration": true,
     "eslint.autoFixOnSave": true,
     "css.validate": false,
-    "scss.validate": false,
+    "scss.validate": false
 }
