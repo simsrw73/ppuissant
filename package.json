@@ -19,7 +19,7 @@
         "clean": "rimraf .cache dist public",
         "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
         "flow": "flow",
-        "lint": "npm-run-all --parallel lint:*",
+        "lint": "npm-run-all lint:*",
         "lint:js": "eslint --fix src/app/*.js",
         "lint:pug": "glob-exec \"src/**/*.pug\" -- \"pug-lint {{files.join(' ')}}\"",
         "lint:scss": "stylelint --fix \"src/style/**/*.scss\"",
