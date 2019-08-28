@@ -1,6 +1,7 @@
 doctype html
 html(lang='en')
     head
+        include components/gtag.pug
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         title #{name} - #{desc}
@@ -9,8 +10,8 @@ html(lang='en')
             content='width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0'
         )
         meta(name='description', content=desc)
-        link(rel='manifest', href='/manifest.webmanifest')
         meta(name='msapplication-config', content='/browserconfig.xml')
+        link(rel='manifest', href='/manifest.webmanifest')
         include components/favicons
         link(rel='stylesheet', href='style/index.scss')
 
