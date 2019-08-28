@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
+// The 7-1 Pattern
+// https://sass-guidelin.es/#the-7-1-pattern
 @import '1-abstracts/index';
 @import '2-base/index';
 @import '3-components/index';
 @import '4-layout/index';
 @import '5-pages/index';
+@import '6-themes/index';
 @import '7-vendor/index';
-
-@import 'uikit-custom';
