@@ -15,6 +15,7 @@
     "author": "Randy W. Sims",
     "browser": "src/index.pug",
     "scripts": {
+        "prebuild": "rimraf dist",
         "build": "parcel build src/index.pug --no-source-maps",
         "clean": "rimraf .cache dist public",
         "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
@@ -25,6 +26,11 @@
         "lint:scss": "stylelint --fix \"src/style/**/*.scss\"",
         "start": "parcel src/index.pug --out-dir public",
         "stylelint-check": "stylelint-config-prettier-check"
+    },
+    "staticFiles": {
+        "staticPath": [
+            "src/static"
+        ]
     },
     "husky": {
         "hooks": {
@@ -67,6 +73,7 @@
         "npm-run-all": "^4.1.5",
         "parcel-bundler": "^1.12.3",
         "parcel-plugin-browserconfig": "^1.0.3",
+        "parcel-plugin-static-files-copy": "^2.2.1",
         "prettier": "^1.18.2",
         "prettier-eslint": "^9.0.0",
         "pug": "^2.0.4",
