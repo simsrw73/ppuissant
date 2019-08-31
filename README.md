@@ -43,3 +43,12 @@ npm run build
 ```shell
 npm run clean
 ```
+
+## Usefull Tools
+
+### Useful Visual Studio Code Extensions
+
+- [Flow Language Support <flowtype.flow-for-vscode>](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode)
+- [Prettier - Code formatter <esbenp.prettier-vscode>](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint <dbaeumer.vscode-eslint>](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [stylelint <shinnn.stylelint>](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
